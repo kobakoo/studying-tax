@@ -26,6 +26,7 @@ pie title 一般会計歳入
 "タバコ税":0.94
 "その他の税":2.32
 ```
+
 出典：令和６年度一般会計予算 歳出・歳入の構成（財務省）
 [https://www.mof.go.jp/tax_policy/summary/condition/002.pdf](https://www.mof.go.jp/tax_policy/summary/condition/002.pdf)
 
