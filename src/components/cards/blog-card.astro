@@ -1,7 +1,7 @@
 ---
 import { Badge } from "@/components/ui/badge";
 import { formatDate } from "@/lib/utils";
-import { Image } from "astro:assets";
+import { Picture } from "astro:assets";
 import type { CollectionEntry } from "astro:content";
 
 type Props = CollectionEntry<"blog">;
@@ -14,13 +14,14 @@ const post = Astro.props;
     href={`/blog/${post.slug}/`}
     class="flex h-52 group-hover:-translate-y-2 group-hover:shadow-xl transition duration-300"
   >
-    <Image
-      loading="eager"
+    <Picture
+      loading="lazy"
       class="w-full h-full object-cover rounded-xl overflow-hidden"
       width={720}
       height={360}
       src={post.data.cover}
-      alt="descriptive text"
+      formats={['avif', 'webp']}
+      alt="post thumbnail"
       transition:name={`img-${post.slug}`}
     />
   </a>

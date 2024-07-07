@@ -3,7 +3,7 @@ import type { SidebarNavItem, SiteConfig } from "@/types";
 export const siteConfig: SiteConfig = {
   name: "ゼイキン！",
   description: "税金について学ぼう！",
-  url: "https://astro-nomy.vercel.app",
+  url: "https://studyingtax.sikumi.jp/",
   ogImage: "https://sikumi.jp/thumbnail.png",
   links: {
     twitter: "https://twitter.com/kobako0O",

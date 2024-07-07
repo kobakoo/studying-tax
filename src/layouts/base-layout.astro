@@ -6,16 +6,16 @@ import { Toaster } from "sonner";
 import { cn } from "@/lib/utils";
 
 type Props = {
-  title: string;
-  description?: string;
-  bodyClass?: string;
+	title: string;
+	description?: string;
+	bodyClass?: string;
 };
 
 const { title, description, bodyClass } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html lang="ja" class="scroll-smooth">
   <head>
     <BaseHead title={title} description={description} />
   </head>

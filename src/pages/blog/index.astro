@@ -5,15 +5,20 @@ import MainLayout from "@/layouts/main-layout.astro";
 import { getPosts } from "@/lib/fetchers";
 
 const posts = await getPosts();
+const sortedPosts = posts.sort(
+	(a, b) =>
+		new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime(),
+);
 ---
 
-<MainLayout title="Static Blog">
+<MainLayout title="記事一覧">
   <section class="container py-10">
     <BlogHeader title="記事一覧" />
     <div
       class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-9 md:gap-y-11 lg:gap-y-16 lg:gap-x-8"
     >
-      {posts.map((post) => <BlogCard {...post} />)}
+      {sortedPosts.map((post) => <BlogCard {...post} />)}
     </div>
   </section>
 </MainLayout>
+

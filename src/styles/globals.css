@@ -163,6 +163,26 @@
   }
 }
 
+article {
+  a {
+    @apply break-words;
+  }
+  svg {
+    @apply mt-8;
+    .pieTitleText {
+      font-family: "LINE Seed JP", sans-serif !important;
+      font-weight: 600;
+    }
+
+    .legend text {
+      font-family: "LINE Seed JP", sans-serif !important;
+    }
+    .slice {
+      font-family: "LINE Seed JP", sans-serif !important;
+    }
+  }
+}
+
 .text-gradient_indigo-purple {
   background: linear-gradient(90deg, #6366f1 0%, rgba(168 85 247 / 0.9) 100%);
   /* background: linear-gradient(83.21deg,#3245ff 0%,#bc52ee 100%); */
